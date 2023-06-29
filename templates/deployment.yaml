@@ -23,17 +23,8 @@ spec:
                 name: {{ .Values.app.name }}-env-secret
           env:
             - name: TOKEN_EXPIRATION_MINUTES
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Values.app.name }}-env-secret
-                  key: TOKEN_EXPIRATION_MINUTES
+              value: {{ .Values.jwt.expiration_minutes }}
             - name: REFRESH_TOKEN_EXPIRATION_DAYS
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Values.app.name }}-env-secret
-                  key: REFRESH_TOKEN_EXPIRATION_DAYS
+              value: {{ .Values.jwt.refresh_expiration_days }}
             - name: DB_PORT
-              valueFrom:
-                secretKeyRef:
-                  name: {{ .Values.app.name }}-env-secret
-                  key: DB_PORT
+              value: {{ .Values.dependencies.database.port }}
