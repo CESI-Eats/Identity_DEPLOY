@@ -22,7 +22,3 @@ jwt:
   expiration_minutes: 5
   refresh_expiration_days: 30
   kid: pKtzQAeUDbhtz2wZuY2ocX6gxJ3CTWkl
-
-encoded_expiration_minutes: {{ .Values.jwt.expiration_minutes | b64enc }}
-encoded_refresh_expiration_days: {{ .Values.jwt.refresh_expiration_days | b64enc }}
-encoded_db_port: {{ .Values.dependencies.database.port | b64enc }}
