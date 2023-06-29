@@ -10,8 +10,6 @@ spec:
       app: {{ .Values.app.name }}-app
   template:
     metadata:
-      annotations:
-        checksum/config: {{ include (print $.Template.BasePath "/secret.yaml") . | sha256sum }}
       labels:
         app: {{ .Values.app.name }}-app
     spec:
