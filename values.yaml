@@ -7,19 +7,19 @@ app:
 
 dependencies:
   lapinou:
-    uri: "amqp://identity-service.cesi-eats.svc.cluster.local:5672"
+    uri: amqp://identity-service.cesi-eats.svc.cluster.local:5672
 
   database:
-    host: "armanddebesse.fr"
-    port: "5432"
-    username: "root"
-    password: "password"
-    db_name: "identity_db"
+    host: armanddebesse.fr
+    port: 5432
+    username: root
+    password: password
+    db_name: identity_db
 
 jwt:
-  secret: "mysecret"
-  refresh_secret: "myrefreshsecret"
+  secret: mysecret
+  refresh_secret: myrefreshsecret
   expiration_minutes: 5
   refresh_expiration_days: 30
-  kid: "pKtzQAeUDbhtz2wZuY2ocX6gxJ3CTWkl"
+  kid: pKtzQAeUDbhtz2wZuY2ocX6gxJ3CTWkl
 
