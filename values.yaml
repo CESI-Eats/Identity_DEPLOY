@@ -14,7 +14,7 @@ dependencies:
     port: 5432
     username: root
     password: password
-    db_name: identity_db
+    database_name: identity_db
 
 jwt:
   secret: mysecret
