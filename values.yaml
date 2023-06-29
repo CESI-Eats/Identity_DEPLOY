@@ -11,7 +11,7 @@ dependencies:
 
   database:
     host: armanddebesse.fr
-    port: 5432
+    port: "5432"
     username: root
     password: password
     db_name: identity_db
