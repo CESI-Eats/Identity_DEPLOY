@@ -6,9 +6,6 @@ app:
     tag: latest
 
 dependencies:
-  lapinou:
-    uri: amqp://rabbitmq-service.cesi-eats.svc.cluster.local:5672
-
   database:
     host: armanddebesse.fr
     port: 5432
