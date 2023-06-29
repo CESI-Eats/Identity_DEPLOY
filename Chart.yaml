@@ -1,0 +1,7 @@
+apiVersion: v2
+name: identity-api-chart
+version: 1.0.0
+description: Helm chart to deploy Identity API
+maintainers:
+  - name: Guillaume Miot
+    email: guillaume.miot@viacesi.fr
