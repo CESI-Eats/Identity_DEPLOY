@@ -19,7 +19,7 @@ dependencies:
 jwt:
   secret: "mysecret"
   refresh_secret: "myrefreshsecret"
-  expiration_minutes: "5"
-  refresh_expiration_days: "30"
+  expiration_minutes: 5
+  refresh_expiration_days: 30
   kid: "pKtzQAeUDbhtz2wZuY2ocX6gxJ3CTWkl"
 
